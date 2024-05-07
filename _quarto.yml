@@ -1,0 +1,37 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  sidebar:
+    #title: "OHI Methods (2024)"
+    logo: media/OHI-logo.png
+    style: "docked"
+    search: true
+    contents:
+      - href: index.qmd
+        text: Home
+      - regions.qmd
+      - section: Models
+        contents: 
+          - index-scores.qmd
+          - goal-scores.qmd
+          - section: Likely future status dimensions
+            contents:
+              - trend.qmd
+              - pressure.qmd
+              - resilience.qmd
+      - references.qmd
+  page-footer: 
+    left: Learn more about the [Ocean Health Index](https://oceanhealthindex.org/) 
+    right: Source code available on [{{< fa brands github title="The GitHub octocat logo" >}} GitHub](https://github.com/samanthacsik/OHI-methods-EXAMPLE)
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    page-layout: full
+
+
+
